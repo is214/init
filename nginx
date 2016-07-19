@@ -22,9 +22,9 @@
 nginx="/usr/sbin/nginx"
 prog=$(basename $nginx)
 
-NGINX_CONF_FILE="/etc/nginx/nginx.conf"
+NGINX_CONF_FILE="/usr/local/nginx/conf/nginx.conf"
 
-[ -f /etc/sysconfig/nginx ] && . /etc/sysconfig/nginx
+[ -f /usr/local/nginx ] && . /usr/local/nginx
 
 lockfile=/var/lock/subsys/nginx
 
